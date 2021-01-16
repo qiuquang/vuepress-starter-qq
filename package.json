@@ -1,5 +1,5 @@
 {
-  "name": "vuepress-starter",
+  "name": "vuepress-starter-qq",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -10,9 +10,10 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "sass-loader": "^8.0.2",
     "node-sass": "^4.14.1",
-    "vuepress": "^1.8.0"
+    "sass-loader": "^8.0.2",
+    "vuepress": "^1.8.0",
+    "watchpack": "^2.1.0"
   },
   "dependencies": {
     "element-ui": "^2.15.0"
