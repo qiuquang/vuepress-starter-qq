@@ -12,8 +12,7 @@
   "devDependencies": {
     "node-sass": "^4.14.1",
     "sass-loader": "^8.0.2",
-    "vuepress": "^1.8.0",
-    "watchpack": "^2.1.0"
+    "vuepress": "^1.8.0"
   },
   "dependencies": {
     "element-ui": "^2.15.0"
