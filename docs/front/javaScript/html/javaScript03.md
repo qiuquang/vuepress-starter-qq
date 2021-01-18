@@ -1,0 +1,3 @@
+<ClientOnly>
+  <practice-question />
+</ClientOnly>

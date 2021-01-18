@@ -5,7 +5,7 @@ module.exports = [
       collabsable: false,
       children: [
         {title: 'javaScript绪论', path: '/front/javaScript/html/javaScript01'},
-        {title: 'javaScript第一章练习题', path: '/front/javaScript/html/javaScript02'},
+        {title: 'javaScript之this关键字', path: '/front/javaScript/html/javaScript02'},
       ],
     },
   ]

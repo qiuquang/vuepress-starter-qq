@@ -6,7 +6,8 @@ module.exports = [
         sidebarDepth: 1,    // 可选的, 默认值是 1
         children: [
           {title: '个人简介', path: '/guide/notes/html/personal'},
-          {title: '基本标签', path: '/guide/notes/html/commonTags'},
+          {title: '学习计划', path: '/guide/notes/html/studyPlan'},
+          {title: '槑言槑语', path: '/guide/notes/html/commonTags'},
         ]
     }
 ]

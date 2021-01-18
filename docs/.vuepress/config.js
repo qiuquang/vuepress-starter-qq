@@ -13,5 +13,12 @@ module.exports = {
         nav: require("./nav.js"),
         sidebar: require("./sidebar.js"),
         search: true,
+    },
+    configureWebpack: {
+      resolve: {
+        alias: {
+          '@alias': '.vuepress/public/img/'
+        }
+      }
     }
   }

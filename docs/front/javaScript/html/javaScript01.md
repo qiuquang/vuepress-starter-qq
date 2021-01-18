@@ -1,19 +1,3 @@
-1.javaScript是谁发明的？<br/>
-A.xxx<br/>
-B.xxx<br/>
-C.xxx<br/>
-D.xxx<br/>
+# JavaScript绪论
 
-::: details 解析
-答案是A。xxxxxxxxx
-:::
-
-2.HTML是谁发明的？<br/>
-A.xxx<br/>
-B.xxx<br/>
-C.xxx<br/>
-D.xxx<br/>
-
-::: details 解析
-答案是B。xxxxxxxxx
-:::
+这个人很懒，这里什么都没有……
