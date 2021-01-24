@@ -51,6 +51,33 @@ mappedMutation 最后判断 val 是否是 function，是就调用 apply 将 val 
 
 [辅助函数参考文章](https://www.yuque.com/fe9/basic/aivfqs)
 
+### getModuleByNamespace
+
+getModuleByNamespace 函数主要用来搜索具有命名空间的模块。
+
+```javascript
+/**
+ * Search a special module from store by namespace. if module not exist, print error message.
+ * @param {Object} store
+ * @param {String} helper
+ * @param {String} namespace
+ * @return {Object}
+ */
+function getModuleByNamespace(store, helper, namespace) {
+  const module = store._modulesNamespaceMap[namespace]
+  if (process.env.NODE_ENV !== 'production' && !module) {
+    console.error(
+      `[vuex] module namespace not found in ${helper}(): ${namespace}`
+    )
+  }
+  return module
+}
+```
+
+
+
+
+
 ```javascript
 /**
  * 标准化map
