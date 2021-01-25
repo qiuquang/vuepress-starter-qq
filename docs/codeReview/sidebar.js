@@ -5,6 +5,7 @@ module.exports = [
       collabsable: false,
       children: [
         {title: 'Review20210125', path: '/codeReview/html/review01'},
+        {title: 'Review20210201', path: '/codeReview/html/review02'},
       ],
     },
   ]
