@@ -135,6 +135,28 @@ function isValidMap(map) {
 
 pop() 方法用于删除并返回数组的最后一个<font color="red"> 元素的值 </font>，减少数组的 length 值。
 
+- 封装一个方法，传入数字和index，来获取截取位置的元素
+
+```javascript
+/**
+ * index 传入的序号
+ * arr 传入的数组
+ * return 截取的index位置的元素
+**/
+function getOneInArray(index, arr) {
+    if(arr.length === 0) return [];
+    if(index >= 0) {
+        return arr[index];
+    } else {
+        return arr[arr.length + index];
+    }
+}  
+```
+
+可以改变原数组的方法：'push','pop','shift','unshift','splice','sort','reverse'
+
+[为什么用Object.prototype.toString.call(obj)检测对象类型?](https://www.cnblogs.com/youhong/p/6209054.html )
+
 ## 3、html中dom重复时，尽量用循环展示
 
 ![image-20210121180237563](../assets/image-20210121180237563.png)
