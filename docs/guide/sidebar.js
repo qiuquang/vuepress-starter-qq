@@ -5,9 +5,10 @@ module.exports = [
         collapsable: false, // 可选的, 默认值是 true,
         sidebarDepth: 1,    // 可选的, 默认值是 1
         children: [
-          {title: '个人简介', path: '/guide/notes/html/personal'},
-          {title: '学习计划', path: '/guide/notes/html/studyPlan'},
-          {title: '槑言槑语', path: '/guide/notes/html/commonTags'},
+          {title: '个人简介', path: '/guide/notes/html/guide01'},
+          {title: '学习计划', path: '/guide/notes/html/guide02'},
+          {title: '槑言槑语', path: '/guide/notes/html/guide03'},
+          {title: '迷茫的时候看这里', path: '/guide/notes/html/guide04'},
         ]
     }
 ]
