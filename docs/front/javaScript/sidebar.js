@@ -9,6 +9,7 @@ module.exports = [
         {title: 'javaScript之语言基础', path: '/front/javaScript/html/javaScript03'},
         {title: 'javaScript之变量、作用域与内存', path: '/front/javaScript/html/javaScript04'},
         {title: 'javaScript之基本引用类型', path: '/front/javaScript/html/javaScript05'},
+        {title: 'javaScript之集合引用类型', path: '/front/javaScript/html/javaScript06'},
       ],
     },
   ]

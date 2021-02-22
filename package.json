@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "docs:dev": "vuepress dev docs --temp .temp",
+    "docs:dev": "vuepress dev docs --temp .temp --port 9999",
     "docs:build": "vuepress build docs"
   },
   "author": "",
