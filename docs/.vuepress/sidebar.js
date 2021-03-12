@@ -3,5 +3,6 @@ module.exports = {
     '/front/html': require("../front/html/sidebar"),
     '/front/css': require("../front/css/sidebar"),
     '/guide/': require("../guide/sidebar"),
-    '/codeReview/': require("../codeReview/sidebar")
+    '/codeReview/': require("../codeReview/sidebar"),
+    '/javaScriptCode/': require("../javaScriptCode/sidebar")
 }

@@ -8,6 +8,7 @@ module.exports = [
         { text: '代码Review', link: '/codeReview/html/review01' },
       ]
     },
+    { text: 'JavaScript 核心原理精讲', link: '/javaScriptCode/html/js1'},
     { text: '关于我', link: '/guide/' },
     { text: 'google', link: 'https://google.com' },
   ]
