@@ -11,7 +11,7 @@
 ![image-20210322132605111](../assets/image-20210322132605111.png)
 
 ```JavaScript
-    // 通过hook监听组件销毁钩子函数，并取消监听事件
+    // 通过hook监听组件销毁钩子函数，并取消监听事件1
     this.$once('hook:beforeDestroy', () => {
       window.removeEventListener('resize', this.getPosition);
       this.$bus.$off('messageDelete');
