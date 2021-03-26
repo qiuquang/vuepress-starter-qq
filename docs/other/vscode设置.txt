@@ -1,0 +1,62 @@
+{
+  "editor.fontSize": 14,
+  "explorer.confirmDelete": false,
+  "editor.mouseWheelZoom": true,
+  "eslint.alwaysShowStatus": true,
+  "eslint.validate": [
+      "javascript",
+      "javascriptreact",
+      {
+        "language": "vue",
+        "autoFix": true
+      },
+      {
+          "language": "html",
+          "autoFix": true
+        },
+      "vue"
+    ],
+    "eslint.autoFixOnSave": true,
+  
+  "git.enableSmartCommit": true,
+  "fileheader.customMade": {},
+  "files.associations": {
+    "*.vue": "vue",
+    "*.txt": "html"
+  },
+  //函数注释
+  "fileheader.cursorMode": {
+      "name":"",
+      "test":"test font",
+      "msg":"",
+      "param":"",
+      "return":""
+  },
+  "workbench.iconTheme": "vscode-icons",
+  "[json]": {
+      "editor.defaultFormatter": "HookyQR.beautify"
+  },
+  "editor.renderIndentGuides": false,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  },
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "npm.enableScriptExplorer": true,
+  "todo-tree.tree.showScanModeButton": false,
+  "[javascript]": {
+    "editor.defaultFormatter": "vscode.typescript-language-features"
+  },
+  "git.confirmSync": false,
+  "terminal.integrated.shell.windows": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+  "diffEditor.ignoreTrimWhitespace": false,
+  "leetcode.endpoint": "leetcode-cn",
+  "eslint.codeAction.showDocumentation": {
+  
+    "enable": true
+  },
+  "leetcode.workspaceFolder": "C:\\Users\\qiuquan\\.leetcode",
+  "leetcode.defaultLanguage": "javascript",
+  "leetcode.hint.commentDescription": false,
+  "leetcode.hint.configWebviewMarkdown": false,
+  "git.path": "E:/Program Files/Git/bin/git.exe",
+}
