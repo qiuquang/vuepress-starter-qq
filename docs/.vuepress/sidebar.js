@@ -4,5 +4,6 @@ module.exports = {
     '/front/css': require("../front/css/sidebar"),
     '/guide/': require("../guide/sidebar"),
     '/codeReview/': require("../codeReview/sidebar"),
-    '/javaScriptCode/': require("../javaScriptCode/sidebar")
+    '/javaScriptCode/': require("../javaScriptCode/sidebar"),
+    '/likeword/': require("../guide/sidebar"),
 }
