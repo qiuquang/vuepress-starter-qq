@@ -9,6 +9,7 @@ module.exports = [
       { title: 'Review20210301', path: '/codeReview/html/review03' },
       { title: 'Review20210308', path: '/codeReview/html/review04' },
       { title: 'Review20210322', path: '/codeReview/html/review05' },
+      { title: 'Review20210412', path: '/codeReview/html/review06' },
     ],
   },
 ]
