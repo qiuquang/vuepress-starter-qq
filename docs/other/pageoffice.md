@@ -1,22 +1,21 @@
-# PageOffice.js前端开发流程
+# PageOffice.js 前端开发流程
 
-## 1.pageoffice引入
+## 1.pageoffice 引入
 
 ```javascript
-// rem.js 动态引入pageoffice
+// rem.js 动态引入pageoffice1
 // 动态引入pageOffice文件
 function imoprtPageOffice() {
-  const s = document.createElement('script');
-  s.type = 'text/javascript';
-  s.src = '/amos/workflow/pageoffice.js';
+  const s = document.createElement("script");
+  s.type = "text/javascript";
+  s.src = "/amos/workflow/pageoffice.js";
   document.body.appendChild(s);
 }
-
 ```
 
-## 2.调用生成wordFileId接口
+## 2.调用生成 wordFileId 接口
 
-页面内容修改后，点击保存的时候调用此方法，生成wordFileId
+页面内容修改后，点击保存的时候调用此方法，生成 wordFileId
 
 ```javascript
 // 型号合格证信息保存完后，生成型号合格证的wordid
@@ -40,8 +39,6 @@ async saveBeforeData() {
 },
 ```
 
-
-
 ## 3.编辑格式按钮显示隐藏
 
 ```javascript
@@ -54,7 +51,7 @@ editStyleFlag() {
 }
 ```
 
-## 4.调用pageoffice编辑格式
+## 4.调用 pageoffice 编辑格式
 
 ```javascript
 async editStyle() {
@@ -69,4 +66,3 @@ async editStyle() {
       POBrowser.openWindowModeless(url, 'width=1200px;height=800px;');
     },
 ```
-
