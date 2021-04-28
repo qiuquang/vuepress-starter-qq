@@ -20,5 +20,4 @@
 
 ## 4.方法嵌套，注意冒泡
 
-![image-20210425143135840](D:\workspace\vuepress-starter-qq\docs\codeReview\assets\image-20210425143135840.png)
-
+![image-20210425143135840](../assets/image-20210425143135840.png)
