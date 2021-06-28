@@ -229,14 +229,23 @@
 // fun3();
 
 
-const json = '{"result":true, "count":2}'
-const obj = JSON.parse(json)
-console.log(obj)
+// const json = '{"result":true, "count":2}'
+// const obj = JSON.parse(json)
+// console.log(obj)
 
-const p = JSON.parse(json, (k,v)=>{
-    if(k === '') return v;
-    return v*2;
-})
+// const p = JSON.parse(json, (k,v)=>{
+//     if(k === '') return v;
+//     return v*2;
+// })
 
 
-console.log(p)
+// console.log(p)
+
+// var a = Array(6)
+// console.log(a)
+var b = {1: 0}
+var obj = {0: 'a', 1: 'b', 2:'c', length: 3};
+Array.from(obj, function(value,index){
+console.log(value,index, this, arguments,arguments.length)
+}, obj)
+

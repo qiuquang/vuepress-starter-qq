@@ -13,6 +13,7 @@ module.exports = [
       { title: 'Review20210426', path: '/codeReview/html/review07' },
       { title: 'Review20210517', path: '/codeReview/html/review08' },
       { title: 'Review20210615', path: '/codeReview/html/review09' },
+      { title: 'Review20210628', path: '/codeReview/html/review10' },
     ],
   },
 ]
