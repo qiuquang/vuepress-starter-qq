@@ -4,5 +4,5 @@
 
 1qaz@WSX3edc
 
-svn 123QWEasd_
-oa: Q222639q_
+svn 123QWEasd*
+oa: Q222639q*

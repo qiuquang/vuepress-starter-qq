@@ -9,6 +9,7 @@ module.exports = [
       ]
     },
     { text: 'JavaScript 核心原理精讲', link: '/javaScriptCode/html/js1'},
+    { text: 'Oracle', link: '/oracle/html/oracle1'},
     { text: '关于我', link: '/guide/' },
     { text: 'google', link: 'https://google.com' },
   ]

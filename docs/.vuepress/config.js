@@ -1,10 +1,11 @@
+const head = require('./config/head')
+const plugins = require('./config/plugins')
+
 module.exports = {
     title: '发槑の地方',
     description: '发槑 地方 发槑爱好者',
-    head: [
-        ['link', { rel: 'icon', href: '/img/logo.png' }],
-        ['meta', { name: 'google', content: 'notranslate' }],
-      ],
+    head,
+    plugins,
     markdown: {
       lineNumbers: true
     },

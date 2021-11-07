@@ -6,4 +6,5 @@ module.exports = {
     '/codeReview/': require("../codeReview/sidebar"),
     '/javaScriptCode/': require("../javaScriptCode/sidebar"),
     '/likeword/': require("../guide/sidebar"),
+    '/oracle/': require("../oracle/sidebar")
 }
