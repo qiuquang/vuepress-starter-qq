@@ -93,3 +93,76 @@ COMMIT;
 
 
 
+select的内容
+
+```sql
+一、基本查询
+--1.列上做运算：查询每个员工的年薪（工资和奖金） 数字 + NULL = NULL 
+--转换函数 nvl(a,0) a为空的话，就转成0
+SELECT ename, sal, comm,(SAL + COMM) * 12 FROM EMP
+--正确的写法
+SELECT ename, NVL(sal, 0), NVL(comm, 0),(SAL + NVL(comm, 0)) * 12 FROM EMP
+--2.查询数据做拼接 使用 || 连接
+SELECT ENAME , NVL(sal,0), NVL(comm, 0), '年薪'||(SAL + NVL(comm, 0))*12 FROM EMP
+--3.列的别名 简化列名,表的别名  取字段方便
+SELECT ENAME , NVL(sal,0), NVL(comm, 0), '年薪'||(SAL + NVL(comm, 0))*12 nx FROM EMP e
+二、WHERE 条件查询
+--员工工资在1600~3000之间
+SELECT ENAME, SAL FROM EMP e WHERE e.SAL >=1600 AND e.SAL <= 3000;
+--员工工资在1600以下，3000以上
+SELECT ENAME, SAL FROM emp e WHERE e.SAL > 3000 OR e.SAL < 1600;
+--员工工资既不等于1600，也不等于3000
+SELECT ENAME, SAL FROM emp e WHERE e.SAL <> 3000 AND e.SAL != 1600;
+--三、BETWEEN …… AND 查询（在两者之间）注意:包含边界值
+SELECT ENAME, SAL FROM EMP e WHERE e.SAL BETWEEN 1600 AND 3000;
+--四、LIKE 模糊查询
+--查询员工名字包含s的员工信息  % 0-N个字符
+SELECT * FROM EMP e WHERE e.ENAME LIKE '%S%'
+--查询员工名字中第一个字母是S 表名、列名不区分大小写，但是表中的值区分大小写
+SELECT * FROM EMP e WHERE e.ENAME LIKE 'S%'
+--查询员工名字中第三个字母是O的员工信息  _ 代表 1个 字符
+SELECT * FROM EMP e WHERE e.ENAME LIKE '__N%'
+--五、IN 查询
+--查询员工编是7698,7900,7934的员工
+SELECT * FROM EMP e WHERE e.EMPNO IN (7698,7900,7934)
+--六、 CASE 查询  选择 工资、级别
+-- 工资在0-1500之间“初级测试工程师”，
+-- 1500-3000 中级测试工程师 
+-- 3000以上 高级测试工程师
+SELECT e.ENAME, e.SAL, 
+CASE 
+		WHEN e.SAL =0 AND e.sal <= 1500 THEN '初级测试工程师'
+		WHEN e.SAL > 1500 AND e.sal <= 3000 THEN '中级测试工程师'
+		ELSE '初级测试工程师'
+END AS 职称 
+FROM EMP e 
+七、NOT 查询
+-- 查询没有奖金的员工
+SELECT * FROM EMP e WHERE e.COMM != 0 AND e.COMM IS NOT NULL 
+-- 查询没奖金的员工
+SELECT * FROM EMP e WHERE e.COMM IS NULL 
+--not in  表示 不在
+SELECT * FROM EMP e WHERE e.EMPNO NOT IN (7698,7900,7934)
+--not LIKE  不像 不包含
+SELECT * FROM EMP e WHERE e.ENAME NOT LIKE '%S%'
+-- not + between and  不在两者之间
+SELECT ENAME, SAL FROM EMP e WHERE e.SAL NOT BETWEEN 1600 AND 3000;
+--八、ORDER BY 排序 永远在最后 
+SELECT * FROM EMP e  WHERE e.SAL > 1600 ORDER BY e.SAL DESC 
+ --1. ase 升序  DESC 降序
+ --2.按字符串：varchar2,日期：date 或者数字：number排序
+ --3.根据列名排序
+SELECT e.*, (sal + NVL(COMM, 0) * 12) nx FROM EMP e ORDER BY nx DESC 
+ --4.根据列的序号排序
+SELECT e.*, (sal + NVL(COMM, 0) * 12) nx FROM EMP e ORDER BY 5
+ --5.根据多个字段排序，按顺序排序
+SELECT e.*, (sal + NVL(COMM, 0) * 12) nx FROM EMP e ORDER BY DEPTNO ASC , nx DESC 
+
+
+```
+
+
+
+小练习：
+
+![image-20211107202449192](../assets/image-20211107202449192.png)

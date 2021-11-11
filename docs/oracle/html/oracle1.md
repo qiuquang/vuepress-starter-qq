@@ -24,6 +24,10 @@
 
  当我再次重装的时候，选择之前安装的目录（已经删除干净了），就出现了 “[INS-32025] 所选安装与指定 Oracle 主目录中已安装的软件冲突” 的问题，解决办法为：删除C:\Program Files (x86)\Oracle\Inventory\ContentsXML目录下的inventory.xml 文件即可。（附带改文件内容，该目录地址在这里被占用了，所以会报错）
 
+## 5.数据库的卸载
+
+![image-20211107200819713](../assets/image-20211107200819713.png)
+
 ## 六、默认的三个用户
 
 1、用户名: sys,密码:安装时输入的密码admin,老板:超级管理员。在登录时必须选择sysdba
@@ -46,4 +50,8 @@
 conn /as sysdba ----- 连接到数据本地数据
 
 alter user system identified by password; ----- 修改system 密码  为password(你自定义的密码)
+
+
+
+
 
