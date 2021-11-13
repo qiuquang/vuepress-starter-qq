@@ -6,6 +6,7 @@ module.exports = {
     description: '发槑 地方 发槑爱好者',
     head,
     plugins,
+    dest: './dist',
     markdown: {
       lineNumbers: true
     },

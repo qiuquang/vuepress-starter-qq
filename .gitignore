@@ -3,6 +3,7 @@ node_modules
 /.temp
 /coverage
 /official
+/dist
 
 # env files
 
