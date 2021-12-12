@@ -93,12 +93,76 @@ int main() {
 
 
 
-#if 1
+#if 0
 /*
-  循环语句
+  循环语句 while
 */
 #include <stdio.h>
 
-int main() {}
+int main() {
+	int sum = 0, i=1;
+	while(i<=100){
+		sum += i;
+		i++;
+	}
+	printf("%d\n", sum);
+}
 
 #endif
+
+#if 0
+/*
+  循环语句 do-while 
+*/
+#include <stdio.h>
+
+int main() {
+
+	int sum = 0, i=1;
+	do {
+		sum += i;
+		i++;
+	}while(i<=100);
+	printf("%d\n", sum);
+}
+
+#endif
+
+
+#if 0
+/*
+  循环语句 for
+*/
+#include <stdio.h>
+
+int main() {
+	int sum = 0;
+	for(int i = 1; i <= 100; i++) {
+		sum += i;
+	}
+	printf("%d\n", sum);
+}
+
+#endif
+
+#if 1
+/*判断一个数是质数*/
+#include <stdio.h>
+int main() {
+	int a,flag = 0; // flag是1的时候表示是质数,0表示不是质数
+	scanf("%d", &a);
+	for(int i=2;i<a;i++){
+		if(a%i==0){
+			flag = 1;
+			break;
+		}
+	}
+	if(flag==1){
+		printf("%d不是质数。\n",a);
+	} else {
+		printf("%d是质数。\n",a);
+	}
+}
+
+#endif
+
