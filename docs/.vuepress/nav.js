@@ -6,6 +6,7 @@ module.exports = [
         { text: 'HTML', link: '/front/html/html/HTML01' },
         { text: 'CSS', link: '/front/css/html/CSS01' },
         { text: '代码Review', link: '/codeReview/html/review01' },
+        { text: '跟我一起搭建项目吧', link: '/front/createProject/html/createProject01' },
       ]
     },
     // { text: 'JavaScript 核心原理精讲', link: '/javaScriptCode/html/js1'},
