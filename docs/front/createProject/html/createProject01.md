@@ -1,7 +1,5 @@
 # vue+koa+mysql 项目
 
-<author/>
-
 ## 1.mysql 安装
 
 查看有无 mysql 服务
@@ -62,6 +60,10 @@ yum -y install mysql-community-server
 
    ```javascript
    grep 'temporary password' /var/log/mysqld.log
+   
+   // 输出：2021-12-24T06:42:03.043057Z 1 [Note] A temporary password is generated for root@localhost: yKig=e:\_U1Bq
    ```
 
-  <practice-question />
+![image-20211224144354660](../assets/image-20211224144354660.png)
+
+![mysql](../assets/mysql.png)
