@@ -10,8 +10,14 @@ module.exports = [
       ]
     },
     // { text: 'JavaScript 核心原理精讲', link: '/javaScriptCode/html/js1'},
-    { text: 'C语言', link: '/C/html/01C环境安装及编辑器配置'},
-    { text: 'Oracle', link: '/oracle/html/oracle1'},
+    {  
+      text: '后端', 
+      items: [
+        { text: 'C语言', link: '/C/html/01C环境安装及编辑器配置'},
+        { text: 'leetcode', link: '/leetcode/html/leetcode01'},
+        { text: 'Oracle', link: '/oracle/html/oracle1'},
+      ]
+    },
     { text: '关于我', link: '/guide/' },
     { text: 'google', link: 'https://google.com' },
   ]

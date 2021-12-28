@@ -7,5 +7,6 @@ module.exports = {
     '/javaScriptCode/': require("../javaScriptCode/sidebar"),
     '/likeword/': require("../guide/sidebar"),
     '/oracle/': require("../oracle/sidebar"),
-    '/C/': require("../C/sidebar")
+    '/C/': require("../C/sidebar"),
+    '/leetcode/': require("../leetcode/sidebar")
 }
