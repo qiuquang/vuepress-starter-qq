@@ -17,6 +17,6 @@ module.exports = [{
     sidebarDepth: 1, // 可选的, 默认值是 1
     children: [
         { title: '神奇人生十二法则', path: '/likeword/html/likeword01' },
+        { title: '稻盛和夫的六项精进', path: '/likeword/html/likeword02' },
     ]
-}
-]
+}]
