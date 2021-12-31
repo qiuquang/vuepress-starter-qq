@@ -41,7 +41,7 @@ export default {
     background-image: url("../public/img/author.png");
   }
   .img-t {
-    background-image: url("/img/time.png");
+    background-image: url("/my-vuepress/img/time.png");
   }
   &-text {
     margin: 0 5px;
