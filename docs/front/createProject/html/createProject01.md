@@ -67,3 +67,21 @@ yum -y install mysql-community-server
 ![image-20211224144354660](../assets/image-20211224144354660.png)
 
 ![mysql](../assets/mysql.png)
+
+1. 创建mysql用户
+
+   ![image-20211224222307538](../assets/image-20211224222307538.png)
+
+2. 授权
+
+   ![image-20211224222347882](../assets/image-20211224222347882.png)
+
+3. 刷新权限
+
+   ![image-20211224222403825](../assets/image-20211224222403825.png)
+
+4. 
+
+![image-20211231140839353](../assets/image-20211231140839353.png)
+
+参考链接[mysql增加新用户](https://www.cnblogs.com/fangjb/p/13652551.html)
