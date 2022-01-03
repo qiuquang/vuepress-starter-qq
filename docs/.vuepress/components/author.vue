@@ -38,7 +38,7 @@ export default {
     vertical-align: middle;
   }
   .img-a {
-    background-image: url("../public/img/author.png");
+    background-image: url("/my-vuepress/img/author.png");
   }
   .img-t {
     background-image: url("/my-vuepress/img/time.png");
