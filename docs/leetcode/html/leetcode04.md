@@ -54,21 +54,56 @@
  * @return {number}
  */
 var findMedianSortedArrays = function(nums1, nums2) {
-    const first = nums1
-    const second = nums2
-    // const first = [1,1]
-    // const second = [1,2]
-    const sum = first.concat(second)
-    const unqi = Array.from(new Set(sum)).sort((a,b) => a-b)
-    console.log('unqi', unqi)
-    if(unqi.length%2===1) {
-        const index = (unqi.length - 1) /2
-        return unqi[index]
-    } else {
-        const index = unqi.length / 2
-        return ((unqi[index] + unqi[index - 1]) /2).toFixed(1)
-    }
+      const first = nums1;
+      const second = nums2;
+      // const first = [1,1]
+      // const second = [1,2]
+      const sum = first.concat(second);
+      const unqi = sum.sort((a, b) => a - b);
+      console.log("unqi", unqi);
+      if (unqi.length % 2 === 1) {
+        const index = (unqi.length - 1) / 2;
+        return unqi[index];
+      } else {
+        const index = unqi.length / 2;
+        return (unqi[index] + unqi[index - 1]) / 2;
+      }
 };
 ```
+
+![image-20220103204100057](../assets/image-20220103204100057.png)
+
+:::
+
+::: details 参考答案
+
+```javascript
+/**
+
+@param {number[]} nums1
+@param {number[]} nums2
+@return {number}
+*/
+var findMedianSortedArrays = function (nums1, nums2) {
+let p1 = nums1;
+let p2 = nums2;
+let p3 = [...p1, ...p2]; //ES6新语法很好用，p3得出来的是拼接后的数组
+let p4 = p3.sort((a, b) => a - b); //进行从小到大排序
+n = p4.length;
+if (!p4) {
+    return 0;
+} else {
+    if(n % 2 !== 0 ){ //若长度不能被2整除则为奇数，去获取他的中位数
+        let i = Math.floor(n/2)
+        return p4[i]
+    }else{ //若长度为偶数，寻找中间两个数字除2就为答案啦
+        let j = Math.floor(n/2)-1;
+        return ((p4[j]+p4[j+1])/2)
+    }
+}
+};
+```
+
+![image-20220103204232653](../assets/image-20220103204232653.png)
 
 :::
