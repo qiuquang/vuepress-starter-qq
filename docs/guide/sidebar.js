@@ -18,5 +18,6 @@ module.exports = [{
     children: [
         { title: '神奇人生十二法则', path: '/likeword/html/likeword01' },
         { title: '稻盛和夫的六项精进', path: '/likeword/html/likeword02' },
+        { title: '对自己说的十二句话', path: '/likeword/html/likeword03' },
     ]
 }]

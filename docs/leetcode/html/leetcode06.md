@@ -56,3 +56,29 @@ var convert = function(s, numRows) {
 ```
 
 :::
+
+::: details 参考答案
+
+<img src="../assets/image-20220104222135829.png" alt="image-20220104222135829" style="zoom:67%;" />
+
+```javascript
+/**
+ * @param {string} s
+ * @param {number} numRows
+ * @return {string}
+ */
+var convert = function(s, numRows) {
+    if (numRows === 1) return s;
+    const rows = new Array(numRows).fill("");
+    const n = 2 * numRows - 2;
+    for(let i = 0; i < s.length; i++) {
+        const x = i % n;
+        rows[Math.min(x, n - x)] += s[i];
+    }
+    return rows.join("");
+};
+```
+
+![image-20220104222250331](../assets/image-20220104222250331.png)
+
+:::
